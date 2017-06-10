@@ -1,0 +1,155 @@
+<goml width="fit" height="fit" bgColor="black">
+    <scene>
+        <camera class="camera" near="0.01" far="40.0" aspect="1.5" fovy="45d" position="10,-20,6" rotation="80,0,0" />
+        <!--<camera class="camera" near="0.01" far="40.0" aspect="1.5" fovy="45d" position="0,5,10" rotation="-20,0,0">
+            <camera.components>
+                <MouseCameraControl/>
+            </camera.components>
+        </camera>-->
+        <light rotation="45d,-45d,0d" type="directional" color="#0066ff" intensity="4" />
+        <light rotation="45d,180d,-45d" type="directional" color="#00aaff" intensity="1" />
+        <!--<mesh geometry="sphere" position="0,0,3" color="#0033ff" ambient="#00ffff" diffuse="#0033ff" scale="1" />-->
+        <object id="floors">
+            <object id="floor1" class="floor" position="0,0,0">
+                <mesh id="floorbord1" class="floorElement1" geometry="quad" color="#000066" position="0,0,0"  scale="4,2,1" ambient="#000000" diffuse="#000000" />
+                <object class="rooms">
+                    <mesh class="floorElement1" geometry="cube" position="3.5,1.2,0.1" color="#0033ff" ambient="#00ffff" diffuse="#0033ff" scale="0.5,0.8,0.1" />
+                    <mesh class="floorElement1" geometry="cube" position="2.4,1.2,0.1" color="#0033ff" scale="0.5,0.8,0.1" />
+                    <mesh class="floorElement1" geometry="cube" position="0,1.2,0.1" color="#0033ff" scale="1.5,0.8,0.1" />
+                    <mesh class="floorElement1" geometry="cube" position="-2.1,1.2,0.1" color="#0033ff" scale="0.5,0.8,0.1" />
+                    <mesh class="floorElement1" geometry="cube" position="-3.3,1.2,0.1" color="#0033ff" scale="0.6,0.8,0.1" />
+                    <mesh class="floorElement1" geometry="cube" position="-3.3,-1.2,0.1" color="#0033ff" scale="0.6,0.8,0.1" />
+                    <mesh class="floorElement1" geometry="cube" position="-1.4,-1.2,0.1" color="#0033ff" scale="1.0,0.8,0.1" />
+                    <mesh class="floorElement1" geometry="cube" position="1.4,-1.2,0.1" color="#0033ff" scale="1.0,0.8,0.1" />
+                    <mesh class="floorElement1" geometry="cube" position="3.3,-1.2,0.1" color="#0033ff" scale="0.6,0.8,0.1" />
+                </object>
+            </object>
+            <object id="floor2" class="floor" position="0,0,0.5">
+                <mesh class="floorElement2" geometry="quad" color="#000066" position="0,0,0"  scale="4,2,1" ambient="#000000" diffuse="#000000" />
+                <object class="rooms">
+                    <mesh class="floorElement2" geometry="cube" position="3.5,1.2,0.1" color="#0033ff" ambient="#00ffff" diffuse="#0033ff" scale="0.5,0.8,0.1" />
+                    <mesh class="floorElement2" geometry="cube" position="2.4,1.2,0.1" color="#0033ff" scale="0.5,0.8,0.1" />
+                    <mesh class="floorElement2" geometry="cube" position="0,1.2,0.1" color="#0033ff" scale="1.5,0.8,0.1" />
+                    <mesh class="floorElement2" geometry="cube" position="-2.1,1.2,0.1" color="#0033ff" scale="0.5,0.8,0.1" />
+                    <mesh class="floorElement2" geometry="cube" position="-3.3,1.2,0.1" color="#0033ff" scale="0.6,0.8,0.1" />
+                    <mesh class="floorElement2" geometry="cube" position="-3.3,-1.2,0.1" color="#0033ff" scale="0.6,0.8,0.1" />
+                    <mesh class="floorElement2" geometry="cube" position="-1.4,-1.2,0.1" color="#0033ff" scale="1.0,0.8,0.1" />
+                    <mesh class="floorElement2" geometry="cube" position="1.4,-1.2,0.1" color="#0033ff" scale="1.0,0.8,0.1" />
+                    <mesh class="floorElement2" geometry="cube" position="3.3,-1.2,0.1" color="#0033ff" scale="0.6,0.8,0.1" />
+                </object>
+            </object>
+            <object id="floor3" class="floor" position="0,0,1">
+                <mesh class="floorElement3" geometry="quad" color="#000066" position="0,0,0"  scale="4,2,1" ambient="#000000" diffuse="#000000" />
+                <object class="rooms">
+                    <mesh class="floorElement3" geometry="cube" position="3.5,1.2,0.1" color="#0033ff" ambient="#00ffff" diffuse="#0033ff" scale="0.5,0.8,0.1" />
+                    <mesh class="floorElement3" geometry="cube" position="2.4,1.2,0.1" color="#0033ff" scale="0.5,0.8,0.1" />
+                    <mesh class="floorElement3" geometry="cube" position="0,1.2,0.1" color="#0033ff" scale="1.5,0.8,0.1" />
+                    <mesh class="floorElement3" geometry="cube" position="-2.1,1.2,0.1" color="#0033ff" scale="0.5,0.8,0.1" />
+                    <mesh class="floorElement3" geometry="cube" position="-3.3,1.2,0.1" color="#0033ff" scale="0.6,0.8,0.1" />
+                    <mesh class="floorElement3" geometry="cube" position="-3.3,-1.2,0.1" color="#0033ff" scale="0.6,0.8,0.1" />
+                    <mesh class="floorElement3" geometry="cube" position="-1.4,-1.2,0.1" color="#0033ff" scale="1.0,0.8,0.1" />
+                    <mesh class="floorElement3" geometry="cube" position="1.4,-1.2,0.1" color="#0033ff" scale="1.0,0.8,0.1" />
+                    <mesh class="floorElement3" geometry="cube" position="3.3,-1.2,0.1" color="#0033ff" scale="0.6,0.8,0.1" />
+                </object>
+            </object>
+            <object id="floor4" class="floor" position="0,0,1.5">
+                <mesh class="floorElement4" geometry="quad" color="#000066" position="0,0,0"  scale="4,2,1" ambient="#000000" diffuse="#000000" />
+                <object class="rooms">
+                    <mesh class="floorElement4" geometry="cube" position="3.5,1.2,0.1" color="#0033ff" ambient="#00ffff" diffuse="#0033ff" scale="0.5,0.8,0.1" />
+                    <mesh class="floorElement4" geometry="cube" position="2.4,1.2,0.1" color="#0033ff" scale="0.5,0.8,0.1" />
+                    <mesh class="floorElement4" geometry="cube" position="0,1.2,0.1" color="#0033ff" scale="1.5,0.8,0.1" />
+                    <mesh class="floorElement4" geometry="cube" position="-2.1,1.2,0.1" color="#0033ff" scale="0.5,0.8,0.1" />
+                    <mesh class="floorElement4" geometry="cube" position="-3.3,1.2,0.1" color="#0033ff" scale="0.6,0.8,0.1" />
+                    <mesh class="floorElement4" geometry="cube" position="-3.3,-1.2,0.1" color="#0033ff" scale="0.6,0.8,0.1" />
+                    <mesh class="floorElement4" geometry="cube" position="-1.4,-1.2,0.1" color="#0033ff" scale="1.0,0.8,0.1" />
+                    <mesh class="floorElement4" geometry="cube" position="1.4,-1.2,0.1" color="#0033ff" scale="1.0,0.8,0.1" />
+                    <mesh class="floorElement4" geometry="cube" position="3.3,-1.2,0.1" color="#0033ff" scale="0.6,0.8,0.1" />
+                </object>
+            </object>
+            <object id="floor5" class="floor" position="0,0,2">
+                <mesh class="floorElement5" geometry="quad" color="#000066" position="0,0,0"  scale="4,2,1" ambient="#000000" diffuse="#000000" />
+                <object class="rooms">
+                    <mesh class="floorElement5" geometry="cube" position="3.5,1.2,0.1" color="#0033ff" ambient="#00ffff" diffuse="#0033ff" scale="0.5,0.8,0.1" />
+                    <mesh class="floorElement5" geometry="cube" position="2.4,1.2,0.1" color="#0033ff" scale="0.5,0.8,0.1" />
+                    <mesh class="floorElement5" geometry="cube" position="0,1.2,0.1" color="#0033ff" scale="1.5,0.8,0.1" />
+                    <mesh class="floorElement5" geometry="cube" position="-2.1,1.2,0.1" color="#0033ff" scale="0.5,0.8,0.1" />
+                    <mesh class="floorElement5" geometry="cube" position="-3.3,1.2,0.1" color="#0033ff" scale="0.6,0.8,0.1" />
+                    <mesh class="floorElement5" geometry="cube" position="-3.3,-1.2,0.1" color="#0033ff" scale="0.6,0.8,0.1" />
+                    <mesh class="floorElement5" geometry="cube" position="-1.4,-1.2,0.1" color="#0033ff" scale="1.0,0.8,0.1" />
+                    <mesh class="floorElement5" geometry="cube" position="1.4,-1.2,0.1" color="#0033ff" scale="1.0,0.8,0.1" />
+                    <mesh class="floorElement5" geometry="cube" position="3.3,-1.2,0.1" color="#0033ff" scale="0.6,0.8,0.1" />
+                </object>
+            </object>
+            <object id="floor6" class="floor" position="0,0,2.5">
+                <mesh class="floorElement6" geometry="quad" color="#000066" position="0,0,0"  scale="4,2,1" ambient="#000000" diffuse="#000000" />
+                <object class="rooms">
+                    <mesh class="floorElement6" geometry="cube" position="3.5,1.2,0.1" color="#0033ff" ambient="#00ffff" diffuse="#0033ff" scale="0.5,0.8,0.1" />
+                    <mesh class="floorElement6" geometry="cube" position="2.4,1.2,0.1" color="#0033ff" scale="0.5,0.8,0.1" />
+                    <mesh class="floorElement6" geometry="cube" position="0,1.2,0.1" color="#0033ff" scale="1.5,0.8,0.1" />
+                    <mesh class="floorElement6" geometry="cube" position="-2.1,1.2,0.1" color="#0033ff" scale="0.5,0.8,0.1" />
+                    <mesh class="floorElement6" geometry="cube" position="-3.3,1.2,0.1" color="#0033ff" scale="0.6,0.8,0.1" />
+                    <mesh class="floorElement6" geometry="cube" position="-3.3,-1.2,0.1" color="#0033ff" scale="0.6,0.8,0.1" />
+                    <mesh class="floorElement6" geometry="cube" position="-1.4,-1.2,0.1" color="#0033ff" scale="1.0,0.8,0.1" />
+                    <mesh class="floorElement6" geometry="cube" position="1.4,-1.2,0.1" color="#0033ff" scale="1.0,0.8,0.1" />
+                    <mesh class="floorElement6" geometry="cube" position="3.3,-1.2,0.1" color="#0033ff" scale="0.6,0.8,0.1" />
+                </object>
+            </object>
+            <object id="floor7" class="floor" position="0,0,3">
+                <mesh class="floorElement7" geometry="quad" color="#000066" position="0,0,0"  scale="4,2,1" ambient="#000000" diffuse="#000000" />
+                <object class="rooms">
+                    <mesh class="floorElement7" geometry="cube" position="3.5,1.2,0.1" color="#0033ff" ambient="#00ffff" diffuse="#0033ff" scale="0.5,0.8,0.1" />
+                    <mesh class="floorElement7" geometry="cube" position="2.4,1.2,0.1" color="#0033ff" scale="0.5,0.8,0.1" />
+                    <mesh class="floorElement7" geometry="cube" position="0,1.2,0.1" color="#0033ff" scale="1.5,0.8,0.1" />
+                    <mesh class="floorElement7" geometry="cube" position="-2.1,1.2,0.1" color="#0033ff" scale="0.5,0.8,0.1" />
+                    <mesh class="floorElement7" geometry="cube" position="-3.3,1.2,0.1" color="#0033ff" scale="0.6,0.8,0.1" />
+                    <mesh class="floorElement7" geometry="cube" position="-3.3,-1.2,0.1" color="#0033ff" scale="0.6,0.8,0.1" />
+                    <mesh class="floorElement7" geometry="cube" position="-1.4,-1.2,0.1" color="#0033ff" scale="1.0,0.8,0.1" />
+                    <mesh class="floorElement7" geometry="cube" position="1.4,-1.2,0.1" color="#0033ff" scale="1.0,0.8,0.1" />
+                    <mesh class="floorElement7" geometry="cube" position="3.3,-1.2,0.1" color="#0033ff" scale="0.6,0.8,0.1" />
+                </object>
+            </object>
+            <object id="floor8" class="floor" position="0,0,3.5">
+                <mesh class="floorElement8" geometry="quad" color="#000066" position="0,0,0"  scale="4,2,1" ambient="#000000" diffuse="#000000" />
+                <object class="rooms">
+                    <mesh class="floorElement8" geometry="cube" position="3.5,1.2,0.1" color="#0033ff" ambient="#00ffff" diffuse="#0033ff" scale="0.5,0.8,0.1" />
+                    <mesh class="floorElement8" geometry="cube" position="2.4,1.2,0.1" color="#0033ff" scale="0.5,0.8,0.1" />
+                    <mesh class="floorElement8" geometry="cube" position="0,1.2,0.1" color="#0033ff" scale="1.5,0.8,0.1" />
+                    <mesh class="floorElement8" geometry="cube" position="-2.1,1.2,0.1" color="#0033ff" scale="0.5,0.8,0.1" />
+                    <mesh class="floorElement8" geometry="cube" position="-3.3,1.2,0.1" color="#0033ff" scale="0.6,0.8,0.1" />
+                    <mesh class="floorElement8" geometry="cube" position="-3.3,-1.2,0.1" color="#0033ff" scale="0.6,0.8,0.1" />
+                    <mesh class="floorElement8" geometry="cube" position="-1.4,-1.2,0.1" color="#0033ff" scale="1.0,0.8,0.1" />
+                    <mesh class="floorElement8" geometry="cube" position="1.4,-1.2,0.1" color="#0033ff" scale="1.0,0.8,0.1" />
+                    <mesh class="floorElement8" geometry="cube" position="3.3,-1.2,0.1" color="#0033ff" scale="0.6,0.8,0.1" />
+                </object>
+            </object>
+            <object id="floor9" class="floor" position="0,0,4">
+                <mesh class="floorElement9" geometry="quad" color="#000066" position="0,0,0"  scale="4,2,1" ambient="#000000" diffuse="#000000" />
+                <object class="rooms">
+                    <mesh class="floorElement9" geometry="cube" position="3.5,1.2,0.1" color="#0033ff" ambient="#00ffff" diffuse="#0033ff" scale="0.5,0.8,0.1" />
+                    <mesh class="floorElement9" geometry="cube" position="2.4,1.2,0.1" color="#0033ff" scale="0.5,0.8,0.1" />
+                    <mesh class="floorElement9" geometry="cube" position="0,1.2,0.1" color="#0033ff" scale="1.5,0.8,0.1" />
+                    <mesh class="floorElement9" geometry="cube" position="-2.1,1.2,0.1" color="#0033ff" scale="0.5,0.8,0.1" />
+                    <mesh class="floorElement9" geometry="cube" position="-3.3,1.2,0.1" color="#0033ff" scale="0.6,0.8,0.1" />
+                    <mesh class="floorElement9" geometry="cube" position="-3.3,-1.2,0.1" color="#0033ff" scale="0.6,0.8,0.1" />
+                    <mesh class="floorElement9" geometry="cube" position="-1.4,-1.2,0.1" color="#0033ff" scale="1.0,0.8,0.1" />
+                    <mesh class="floorElement9" geometry="cube" position="1.4,-1.2,0.1" color="#0033ff" scale="1.0,0.8,0.1" />
+                    <mesh class="floorElement9" geometry="cube" position="3.3,-1.2,0.1" color="#0033ff" scale="0.6,0.8,0.1" />
+                </object>
+            </object>
+            <object id="floor10" class="floor" position="0,0,4.5">
+                <mesh class="floorElement10" geometry="quad" color="#000066" position="0,0,0"  scale="4,2,1" ambient="#000000" diffuse="#000000" />
+                <object class="rooms">
+                    <mesh class="floorElement10" geometry="cube" position="3.5,1.2,0.1" color="#0033ff" ambient="#00ffff" diffuse="#0033ff" scale="0.5,0.8,0.1" />
+                    <mesh class="floorElement10" geometry="cube" position="2.4,1.2,0.1" color="#0033ff" scale="0.5,0.8,0.1" />
+                    <mesh class="floorElement10" geometry="cube" position="0,1.2,0.1" color="#0033ff" scale="1.5,0.8,0.1" />
+                    <mesh class="floorElement10" geometry="cube" position="-2.1,1.2,0.1" color="#0033ff" scale="0.5,0.8,0.1" />
+                    <mesh class="floorElement10" geometry="cube" position="-3.3,1.2,0.1" color="#0033ff" scale="0.6,0.8,0.1" />
+                    <mesh class="floorElement10" geometry="cube" position="-3.3,-1.2,0.1" color="#0033ff" scale="0.6,0.8,0.1" />
+                    <mesh class="floorElement10" geometry="cube" position="-1.4,-1.2,0.1" color="#0033ff" scale="1.0,0.8,0.1" />
+                    <mesh class="floorElement10" geometry="cube" position="1.4,-1.2,0.1" color="#0033ff" scale="1.0,0.8,0.1" />
+                    <mesh class="floorElement10" geometry="cube" position="3.3,-1.2,0.1" color="#0033ff" scale="0.6,0.8,0.1" />
+                </object>
+            </object>
+        </object>
+    </scene>
+</goml>
